@@ -1,0 +1,171 @@
+
+@font-face {
+  font-family: "iddroid";
+  src: url('./fontes/idroid.otf');
+ }
+
+/* @font-face {
+  font-family: "Warsaw Gothic Ext";
+  src: url('./fontes/warsawgothicext.otf');
+ } */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+ background-color: #E8E7C2;
+}
+
+header {
+  background-image: linear-gradient(to bottom, #249859, #116A38, #043D1C);
+  color: white;
+}
+
+header > nav {
+  width: 100vh;
+}
+
+header > nav > a {
+  display: inline-block;
+  padding: 6px 13px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #88caa4;
+}
+
+header > nav > a:hover {
+  background-color: #2B995E;
+  color: #043D1C;
+  padding: 6px 11px;
+}
+
+header > h1 {
+  font-family: 'Arial Black';
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+header > p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main {
+  width: 50%;
+  background-color: white;
+  margin: auto;
+  padding: 12px 14px; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main > h1 {
+  font-family: 'iddroid', Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  color: #103622;
+}
+
+main > h2 {
+  font-family: 'iddroid', Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  color: #0F6130;
+  background-color: #A3EBC1;
+}
+
+footer {
+  width: 100%;
+  display: inline-block;
+  align-content: center;
+}
+
+main p {
+  text-indent: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #00a400;
+  font-weight: bold;
+}
+
+main a::after {
+  content: '🔗';
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+.destaque {
+  color: #006400;
+  font-weight: bold;
+}
+
+
+.learn {
+  background-color: #7FE1A9;
+  border-radius: 10px;
+}
+
+.learn p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.learn nav ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  padding: 0;
+  margin: auto;
+}
+
+.learn nav ul li {
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.learn nav ul li::before {
+  content: "✔"; 
+  color: black;  
+  font-size: 18px;
+  margin-right: 10px; 
+}
+
+
+.title {
+  padding: 12px;
+  border-radius: 10px;
+  color: white;
+  background-color: #175C33;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.videoplayer {
+  border: 32px solid #043D1C;
+  position: relative; 
+  padding-top: 56.25%; 
+  height: 0;
+  overflow: hidden;
+}
+
+.videoplayer > iframe {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  height: 100%;
+}
+
+#bugdroid {
+  max-width: 250px;
+  margin: auto;
+}
